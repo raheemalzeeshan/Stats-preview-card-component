@@ -83,7 +83,7 @@ body{
 #wrapper .container .card .card-img{
     width: 50%;
     height: auto;
-    background-image: linear-gradient(hsl(277deg 69% 37% / 56%),hsl(277deg 69% 37% / 56%)) ,url(../stats-preview-card-component-main/images/image-header-desktop.jpg);
+    background-image: linear-gradient(hsl(277deg 69% 37% / 56%),hsl(277deg 69% 37% / 56%)) ,url(../images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: content-box;   
