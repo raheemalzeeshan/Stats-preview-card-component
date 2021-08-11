@@ -118,7 +118,7 @@ body{
     #wrapper .container .card .card-img {
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(hsl(277deg 69% 37% / 56%),hsl(277deg 69% 37% / 56%)) ,url(../stats-preview-card-component-main/images/image-header-mobile.jpg);
+        background-image: linear-gradient(hsl(277deg 69% 37% / 56%),hsl(277deg 69% 37% / 56%)) ,url(../images/image-header-mobile.jpg);
         border-bottom-right-radius: 0px;
         border-top-left-radius: 10px;
 
