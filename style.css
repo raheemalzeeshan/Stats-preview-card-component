@@ -167,7 +167,11 @@ body{
         padding-right: 10px;
     }
   }
-
+@media only screen and (max-width: 635px) {
+    #wrapper .container .card .card-img {
+        background-position: top center;
+    }
+}
 @media only screen and (max-width: 320px){
     #wrapper .container .card .card-img {
         height: 40vh;
