@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    /* ### Neutral */
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+}
+body{
+    color: #fff;
+}
+#wrapper {
+    background-color: var(--very-dark-blue);
+}
+
+#wrapper .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#wrapper .container .card{
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+}
+#wrapper .container .card .card-text {
+    width: 50%;
+    padding: 3.5rem;
+    padding-right: 52px;
+}
+
+#wrapper .container .card .card-text h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 31px;
+    margin-bottom: 30px;
+}
+#wrapper .container .card .card-text h1 span{
+    color: var(--soft-violet);
+}
+
+#wrapper .container .card .card-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: var(--slightly-transparent-white-two);
+    margin-bottom: 5rem;
+    line-height: 24px;
+}
+#wrapper .container .card .card-text ul{
+    font-family: 'Lexend Deca', sans-serif;    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper .container .card .card-text ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    padding-right: 30px;
+}
+
+#wrapper .container .card .card-text ul li span {
+    font-size: small;
+    font-weight: 100;
+    color: var(--slightly-transparent-white-two);
+    display: block;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+
+#wrapper .container .card .card-img{
+    width: 50%;
+    height: auto;
+    background-image: linear-gradient(hsl(277deg 69% 37% / 56%),hsl(277deg 69% 37% / 56%)) ,url(../stats-preview-card-component-main/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;   
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#wrapper .container .card .mob-card-img{
+    display: none;
+}
+
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media only screen and (max-width: 960px) {
+    #wrapper .container {
+        height: auto;
+    }
+    #wrapper .container .card {
+        flex-direction: column-reverse;
+    }
+    #wrapper .container .card .card-text {
+        width: 100%;
+    }
+    #wrapper .container .card .card-img {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(hsl(277deg 69% 37% / 56%),hsl(277deg 69% 37% / 56%)) ,url(../stats-preview-card-component-main/images/image-header-mobile.jpg);
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 10px;
+
+    }
+    .attribution {
+        padding: 20px 0px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    #wrapper .container .card .card-img {
+        height: 50vh;
+    }
+    #wrapper .container .card .card-text {
+        padding: 2rem 2rem 0px;
+    }
+    #wrapper .container .card .card-text h1 {
+        text-align: center;
+    }
+    #wrapper .container .card .card-text h1 {
+        margin-bottom: 20px;
+    }
+    #wrapper .container .card .card-text p {
+        margin-bottom: 3rem;
+    }
+    #wrapper .container .card .card-text ul {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+    #wrapper .container .card .card-text ul li {
+        padding: 0px;
+        margin-bottom: 35px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    #wrapper .container .card .card-text h1 {
+        font-size: 28px;
+    }
+    #wrapper .container .card .card-text p {
+        text-align: center;
+        padding-right: 10px;
+    }
+  }
+
+@media only screen and (max-width: 320px){
+    #wrapper .container .card .card-img {
+        height: 40vh;
+    }
+    #wrapper .container .card .card-text h1 {
+        font-size: 27px;
+    }
+}
